@@ -21,10 +21,10 @@ modules_enabled = {
 		"register"; -- Allow users to register on this server using a client and change passwords
 		"admin_adhoc"; -- Allows administration via an XMPP client that supports ad-hoc commands
 		--"admin_telnet"; -- Opens telnet console interface on localhost port 5582
-		--"bosh"; -- Enable BOSH clients, aka "Jabber over HTTP"
+		"bosh"; -- Enable BOSH clients, aka "Jabber over HTTP"
 		--"http_files"; -- Serve static files from a directory over HTTP
 		"posix"; -- POSIX functionality, sends server to background, enables syslog, etc.
-		--"groups"; -- Shared roster support
+		"groups"; -- Shared roster support
 		--"announce"; -- Send announcement to all online users
 		--"welcome"; -- Welcome users who register accounts
 		--"watchregistrations"; -- Alert admins of registrations
@@ -35,7 +35,7 @@ modules_enabled = {
 modules_disabled = {
 	-- "offline"; -- Store offline messages
 	-- "c2s"; -- Handle client connections
-	-- "s2s"; -- Handle server-to-server connections
+	"s2s"; -- Handle server-to-server connections
 };
 
 allow_registration = false;
