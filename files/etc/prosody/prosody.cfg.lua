@@ -45,9 +45,15 @@ ssl = {
 	certificate = "/certs/SSLCERT";
 }
 
-c2s_require_encryption = yes
+https_ports = { 5281 }
+    https_interfaces = { "*" }
 
-s2s_secure_auth = yes
+ https_ssl = {
+        certificate = "/certs/SSLCERT";
+        key = "/certs/SSLKEY";
+    }
+
+c2s_require_encryption = yes
 
 authentication = "internal_plain"
 
