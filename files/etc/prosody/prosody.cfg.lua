@@ -53,6 +53,8 @@ https_ports = { 5281 }
         key = "/certs/SSLKEY";
     }
 
+http_external_url = "https://EHTTP/"
+
 c2s_require_encryption = yes
 
 authentication = "internal_plain"
