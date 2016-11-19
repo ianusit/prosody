@@ -51,12 +51,6 @@ https_ssl = {
         key = "/certs/SSLKEY";
 };
 
-http_external_url = "https://EHTTP/"
-
-consider_bosh_secure =  true;
-consider_websocket_secure = true;
-cross_domain_bosh = true;
-cross_domain_websocket = true;
 
 c2s_require_encryption = yes
 
