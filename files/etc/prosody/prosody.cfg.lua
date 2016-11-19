@@ -55,6 +55,8 @@ https_ports = { 5281 }
 
 http_external_url = "https://EHTTP/"
 
+cross_domain_bosh = true
+
 c2s_require_encryption = yes
 
 authentication = "internal_plain"
