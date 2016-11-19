@@ -33,9 +33,7 @@ modules_enabled = {
 };
 
 modules_disabled = {
-	-- "offline"; -- Store offline messages
-	-- "c2s"; -- Handle client connections
-	"s2s"; -- Handle server-to-server connections
+	"s2s";
 };
 
 allow_registration = false;
@@ -43,19 +41,22 @@ allow_registration = false;
 ssl = {
 	key = "/certs/SSLKEY";
 	certificate = "/certs/SSLCERT";
-}
+};
 
 https_ports = { 5281 }
     https_interfaces = { "*" }
 
- https_ssl = {
+https_ssl = {
         certificate = "/certs/SSLCERT";
         key = "/certs/SSLKEY";
-    }
+};
 
 http_external_url = "https://EHTTP/"
 
-cross_domain_bosh = true
+consider_bosh_secure =  true;
+consider_websocket_secure = true;
+cross_domain_bosh = true;
+cross_domain_websocket = true;
 
 c2s_require_encryption = yes
 
