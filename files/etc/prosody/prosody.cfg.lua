@@ -39,16 +39,16 @@ modules_disabled = {
 allow_registration = false;
 
 ssl = {
-	key = "/certs/SSLKEY";
-	certificate = "/certs/SSLCERT";
+	key = "SSLKEY";
+	certificate = "SSLCERT";
 };
 
 https_ports = { 5281 }
     https_interfaces = { "*" }
 
 https_ssl = {
-        certificate = "/certs/SSLCERT";
-        key = "/certs/SSLKEY";
+        certificate = "SSLCERT";
+        key = "SSLKEY";
 };
 
 
