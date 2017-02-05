@@ -1,3 +1,3 @@
 #!/bin/sh
-sed -i "s/VHOST/${VHOST}/g" /etc/prosody/prosody.cfg.lua
+sed -i "s/SERVICENAME/${SERVICENAME}/g" /etc/prosody/prosody.cfg.lua
 prosodyctl start
