@@ -6,7 +6,7 @@ RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/
     apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ prosody &&\
     rm -rf /var/cache/apk/*
     
-COPY files/etc/prosody/prosody.cfg.lua /etc/prosody/prosody.cfg.lua
+COPY files/defaults/ /defaults/    
 COPY files/start.sh /start.sh
 
 RUN chmod +x /start.sh
