@@ -39,16 +39,16 @@ modules_disabled = {
 allow_registration = false;
 
 ssl = {
-	key = "SSLKEY";
-	certificate = "SSLCERT";
+	key = "/certs/live/VHOST/privkey.pem";
+	certificate = "/certs/live/VHOST/fullchain.pem";
 };
 
 https_ports = { 5281 }
     https_interfaces = { "*" }
 
 https_ssl = {
-        certificate = "SSLCERT";
-        key = "SSLKEY";
+        certificate = "/certs/live/VHOST/fullchain.pem";
+        key = "/certs/live/VHOST/privkey.pem";
 };
 
 
