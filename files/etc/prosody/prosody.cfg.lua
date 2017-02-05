@@ -39,16 +39,16 @@ modules_disabled = {
 allow_registration = false;
 
 ssl = {
-	key = "/certs/live/VHOST/privkey.pem";
-	certificate = "/certs/live/VHOST/fullchain.pem";
+	key = "/certs/live/SERVICENAME/privkey.pem";
+	certificate = "/certs/live/SERVICENAME/fullchain.pem";
 };
 
 https_ports = { 5281 }
     https_interfaces = { "*" }
 
 https_ssl = {
-        certificate = "/certs/live/VHOST/fullchain.pem";
-        key = "/certs/live/VHOST/privkey.pem";
+        certificate = "/certs/live/SERVICENAME/fullchain.pem";
+        key = "/certs/live/SERVICENAME/privkey.pem";
 };
 
 
@@ -62,4 +62,4 @@ log = {
 	"*console"; -- Log to the console, useful for debugging with daemonize=false
 }
 
-VirtualHost "VHOST"
+VirtualHost "SERVICENAME"
